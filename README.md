@@ -23,7 +23,7 @@ Given this info, and running this demo on our own, we can conclude that average 
 <br/>
 <br/>
 
-### II Bloom filters:
+## II Bloom filters:
 
 - m = 2^10, k = 4 -> **n = 106** for p = 1%
 - m = 2^12, k = 4 -> **n = 427** for p = 1%
