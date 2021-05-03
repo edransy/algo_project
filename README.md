@@ -25,42 +25,21 @@ Given this info, and running this demo on our own, we can conclude that average 
 
 ### II Bloom filters:
 
-**Number of inserts that makes the original Bloom filter have the false positive rate f=1%:**
-
-- m = 2^10, k = 4 -> **n = 98** for p = 1%
-- m = 2^12, k = 4 -> **n = 390** for p = 1%
-- m = 2^16, k = 4 -> **n = 6229** for p = 1%
+- m = 2^10, k = 4 -> **n = 106** for p = 1%
+- m = 2^12, k = 4 -> **n = 427** for p = 1%
+- m = 2^16, k = 4 -> **n = 6837** for p = 1%
 
 <br/>
 
-**TABLE 1: False positive rates table:**
+**TABLE 1: False positive table:**
 | Type of BF / Size | 2^10 | 2^12 | 2^16 |
 | ----------------- | ---- | ---- | ---- |
-| Original BF | 93.66% | 14.29% | 0% |
-| Partitioned BF | 92.84% | 15.64% | 0% |
+| Original BF | 1.119% | 1.08% | 1.3% |
+| Partitioned BF | 1.559% | 1.42% | 1.42% |
 
 <br/>
 
 ### Discussion:
-
-If we calculate probability of a false positives we will get these results
-
-**TABLE 2: Probability of a false positives table: (n = 1000, k = 4)**
-| | 2^10 | 2^12 | 2^16 |
-| ----------------- | ---- | ---- | ---- |
-| False positive rate: | 92.19% | 15.10% | 0% |
-
-<br/>
-
-By analyzing the False positive rates from the Table 1 and the Table 2 it can be clearly seen that both of the bloom filters perform as expected. Furthermore on the Table 1 we can see that the results are not so different between the two Bloom filters. Both bloom filters perform very well (0% false positive rate) if we allocate enough space (m) and will perform very bad (which is expected) if the allocated space (m) is not enough for the number of items that will be inserted.
-
-Now what is interesting to see is that by increasing number of hash functions we will get worse values for the false positive rates.
-
-**TABLE 3: False positive rates table: (k = 6)**
-| Type of BF / Size | 2^10 | 2^12 | 2^16 |
-| ----------------- | ---- | ---- | ---- |
-| Original BF | 98.1% | 19.42% | 0% |
-| Partitioned BF | 98.82% | 19.96% | 0% |
 
 <br/>
 <br/>
