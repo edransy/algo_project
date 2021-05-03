@@ -18,6 +18,8 @@
 |                       | Max query time:     | 1602.42 * 10^-6 s   | 3438.38 * 10^-6 s      |  7554.74 * 10^-6 s    |
 |                       | Average query time: | 3.46 * 10^-6 s | 3.975 * 10^-6 s  | 4.363 * 10^-6 s  |
 
+
+Given this info, and running this demo on our own, we can conclude that average query time is independent of hash table size, and depends exclusively on load factor. I digged down the C implementation of Python dictionary data structure, and found that for this exact reason, upon filling half of allocated memory, C compiler dubles the size of hash table and rehashes all entries. 
 <br/>
 <br/>
 
