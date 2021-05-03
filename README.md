@@ -1,12 +1,8 @@
-## Instructions to run exercise files:
+## Running project:
 
 - clone the repository
-- navigate to the the project directory and run: **npm install**
-- after installing of the dependencies is finished, run:
-  1. **npm run hashing** to receive results from the first exercise
-  2. **npm run bloom-filters** to receive results from the second exercise
-  3. **npm run count-min_sketch** to receive results from the third exercise
-
+- install dependecies
+- run python3 filename.py
 <br/>
 
 #### NOTE 1: For the implementation details refer to the src folder.
