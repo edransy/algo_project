@@ -4,7 +4,7 @@
 - install dependecies
 - run python3 filename.py
 
-## Hash tables:
+## I Hash tables:
 
 | Load factor / HT size |                     | 2^10                  | 2^14                  | 2^18                  |
 | --------------------- | ------------------- | --------------------- | --------------------- | --------------------- |
@@ -31,15 +31,16 @@ Given this info, and running this demo on our own, we can conclude that average 
 
 <br/>
 
-**TABLE 1: False positive table:**
+**TABLE: False positive table:**
 | Type of BF / Size | 2^10 | 2^12 | 2^16 |
 | ----------------- | ---- | ---- | ---- |
-| Original BF | 1.119% | 1.08% | 1.3% |
+| Non-partitioned BF | 1.119% | 1.08% | 1.3% |
 | Partitioned BF | 1.559% | 1.42% | 1.42% |
 
 <br/>
 
 ### Discussion:
+Given this info, and running this demo on our own, we can conclude that Partitioned Bloom Filter give slightly worse False Positive rate on average. In literature I found that it is to be expected. Again there is no clear difference between Bloom Filter sizes, which is to be expected because we calculated number of entries to be proportional to Bloom filter size. 
 
 <br/>
 <br/>
