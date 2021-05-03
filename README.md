@@ -3,15 +3,8 @@
 - clone the repository
 - install dependecies
 - run python3 filename.py
-<br/>
 
-#### NOTE 1: For the implementation details refer to the src folder.
-
-#### NOTE 2: Make sure Node.js is installed
-
-<br/>
-
-## I Hashing:
+## Hash table:
 
 **NOTE:** time is written in seconds
 
@@ -71,36 +64,3 @@ Now what is interesting to see is that by increasing number of hash functions we
 
 <br/>
 <br/>
-
-## Count-min sketch
-
-**Note 1:** For this exercise only these things are done:
-
-1. Filtering the text (words) from the 2000 articles
-2. Storing filtered words to the Count-min sketch
-3. Storing the count of the 100 words with the highest count
-
-**Note 2:** Count-min sketch was configured to use 5 hash functions
-
-<br/>
-
-| NO. of inserted words | Time needed to insert words into the Count-min sketch | Time needed to find frequencies of the inserted words from the Count-min sketch |
-| --------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------- |
-| 1720691               | 1:32.277 (m:ss.mmm)                                   | 3.059s                                                                          |
-
-<br/>
-
-**Top 10 words with the highest frequency:**
-
-- that -> 30593
-- for -> 21693
-- mr -> 20575
-- he -> 18412
-- said -> 18362
-- was -> 17627
-- with -> 15575
-- his -> 13150
-- from -> 10544
-- but -> 10456
-
-To see the frequencies of the top 100 words run: **npm run count-min-sketch**
